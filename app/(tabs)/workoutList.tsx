@@ -1,18 +1,18 @@
 import { StyleSheet } from "react-native";
 
+import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
-import Calendarlog from "@/components/calendar";
 
-export default function TabOneScreen() {
+export default function WorkoutList() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Daily log</Text>
+      <Text style={styles.title}>Workout list</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <Calendarlog path="app/(tabs)/index.tsx" />
+      <EditScreenInfo path="app/(tabs)/WorkoutList.tsx" />
     </View>
   );
 }
